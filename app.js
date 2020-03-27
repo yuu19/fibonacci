@@ -1,5 +1,6 @@
 'use strict';
-/*function fib(n) {
+//計算量はO(2^n)
+function fib(n) {
     if (n === 0) {
         return 0;
     } else if (n === 1) {
@@ -12,8 +13,10 @@ const length = 40;
 
 for (let i  = 0; i <= length; i++) {
     console.log(fib(i));
-}*/
+}
 
+
+//メモ化再帰により計算量をO(n)に
 const memo = new Map();
 memo.set(0, 0);
 memo.set(1, 1);
